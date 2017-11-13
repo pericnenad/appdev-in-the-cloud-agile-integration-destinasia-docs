@@ -1,6 +1,6 @@
 AppDev in the Cloud - Agile Integration with Destinasia
 =======================================================
-Workshop documentation for using the RHPDS demo can be found here.
+Workshop documentation for using the RHPDS demo instructions, [click here](appdev-in-the-cloud-destinasia.adoc).
 
 Releases
 --------
