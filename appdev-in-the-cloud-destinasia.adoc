@@ -60,7 +60,7 @@ NOTE: HAProxy is running on the *workstation* machine.  This provides a level of
 
 . Go to *Services -> Catalogs -> Service Catalogs*.
 
-. Under *All Services -> Red Hat Cloud Suite Demos*, select *Modernize Development and Operations Bet*.
+. Under *All Services -> AppDev in the Cloud*, select *Agile Cloud Integration with Destinasia*.
 
 . On the right, click *Order*.
 
@@ -85,7 +85,6 @@ Be mindful of the runtime of your demo environment! It may take you longer than 
 
 * *OpenShift console:* `https://workstation-<YOUR-GUID>.rhpds.opentlc.com:8443`
 
-* *CloudForms appliance:* `https://cf-<YOUR-GUID>.rhpds.opentlc.com`
 
 [TIP]
 You can also find these URLs in the email you received when you provisioned the demo environment.
@@ -173,19 +172,18 @@ The 'init.sh' running in the console will finish with output like this:
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab02.html
+`https://appdevcloudworkshop.github.io/lab02.html`
 
 ==== Explore the Destinasia discount rules project
-TODO
+View online step-by-step lab for this section of the workshop containing details and screenshots for
+exploring the project:
 
-Note: An online step-by-step lab is available, see this for details and screenshots of
-this installation:
-
- https://appdevcloudworkshop.github.io/lab03.html
+`https://appdevcloudworkshop.github.io/lab03.html`
 
 
 === Ansible playbooks for container deployment automation
-TODO
+The backend services for Destinasia are deployed using Ansible automation toolling, specifically Ansible
+playbooks. They are found in the following directory:
 
  $ cd support/playbooks/deploy-ocp-services
 
@@ -202,65 +200,70 @@ Run the wrapper to leverage Ansible playbook for deployment of an xPaaS decision
 business rules from the previously installed container:
 
  $ ./ansible-playbook-ruleservice.sh
- If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
- the following will install the Travel Discount ruleservice now...
+
+If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
+the following will install the Travel Discount ruleservice now...
 
 In the OpenShift console you can watch the deployment unfold in the project 'appdev-in-cloud'.
 
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab04.html
+`https://appdevcloudworkshop.github.io/lab04.html`
 
 
 ==== Deploy Java flight service
 Run the wrapper to leverage Ansible playbook for deployment of a Java flight reservation web service:
 
  $ ./ansible-playbook-javaservice.sh
- If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
- the following will install the Flights javaservice now...
+
+If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
+the following will install the Flights javaservice now...
 
 In the OpenShift console you can watch the deployment unfold in the project 'appdev-in-cloud'.
 
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab05.html
+`https://appdevcloudworkshop.github.io/lab05.html`
 
 ==== Deploy .Net car service
 Run the wrapper to leverage Ansible playbook for deployment of a .Net car rental web service:
 
  $ ./ansible-playbook-dotnetservice.sh
- If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
- the following will install the Car dotnetservice now...
+
+If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
+the following will install the Car dotnetservice now...
 
 In the OpenShift console you can watch the deployment unfold in the project 'appdev-in-cloud'.
 
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab06.html
+`https://appdevcloudworkshop.github.io/lab06.html`
 
 ==== Deploy PHP hotel service
 Run the wrapper to leverage Ansible playbook for deployment of a PHP hotel reservation web service:
 
  $ ./ansible-playbook-phpservice.sh
- If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
- the following will install the Hotel phpservice now...
+
+If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
+the following will install the Hotel phpservice now...
 
 In the OpenShift console you can watch the deployment unfold in the project 'appdev-in-cloud'.
 
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab07.html
+`https://appdevcloudworkshop.github.io/lab07.html`
 
 ==== Deploy Fuse agile integration service
 Run the wrapper to leverage Ansible playbook for deployment of a Fuse xPaaS integration service:
 
  $ ./ansible-playbook-fuseservice.sh
- If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
- the following will install the integration  now...
+
+If you followed the first steps to setup the Destinasia Travel Rules on OpenShift Container Platform,
+the following will install the integration  now...
 
 In the OpenShift console you can watch the deployment unfold in the project 'appdev-in-cloud'.
 
@@ -274,17 +277,21 @@ OpenShift console:
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab08.html
+`https://appdevcloudworkshop.github.io/lab08.html`
 
 === Test application
-Use a browser REST client to ping the xPaaS Fuse endpoint with as explained in the readme file found:
+Use a browser REST client to ping the xPaaS Fuse endpoint with as explained in the readme file found
+here, just view in console for the details:
 
- - support/playbooks/deploy-ocp-services/Readme.md
+ $ cat support/playbooks/deploy-ocp-services/Readme.md
 
 When the Fuse container has fully deployed, you should get a valid REST response as described in the readme file above.
 
 Note: An online step-by-step lab is available, see this for details and screenshots of
 this installation:
 
- https://appdevcloudworkshop.github.io/lab09.html
+`https://appdevcloudworkshop.github.io/lab09.html`
+
+== Conclusion
+This concludes the demo workshop for this AppDev in the Cloud example application.
 
