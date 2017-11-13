@@ -31,9 +31,13 @@ Current versions of products used:
 [cols="1,1",options="header"]
 |=======
 |Product |Version 
-|`OpenShift` |`3.6`
+|`OpenShift Container Platform` |`3.6`
 |`JBoss EAP` |`7.0`
 |`JBoss BRMS` |`6.4`
+|`xPaaS Decision Server` |`6.4`
+|`PHP` |`7.0`
+|`.NET Core` |`2.0`
+|`xPaaS Fuse Integration Service (FIS)` |`2.0`
 |=======
 
 === Environment
